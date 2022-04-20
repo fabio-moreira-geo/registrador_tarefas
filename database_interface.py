@@ -1,5 +1,6 @@
 import sqlite3
 
+
 def insert_contact(name, date, task):
     conn = sqlite3.connect('contact_information.db')
     conn.execute("INSERT INTO CONTACT_INFORMATION (NAME,DATE,TASK) \
